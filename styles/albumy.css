@@ -1,0 +1,146 @@
+:root{
+   --background:#4DA8DA;
+   --timeline: #12232E;
+   --circles:#007CC7;
+}
+
+body{
+    background-image:url("https://wallpaperaccess.com/full/2382346.jpg");
+    background-size: cover ;
+}
+
+.timeline {
+    border-left: 3px solid var(--timeline);
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(63, 66, 23, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .photos {
+    border-bottom: 3px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .photos {
+        padding-top: 30px;
+    }
+}
+
+.timeline .photos:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .photos:before,
+.timeline .photos:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .photos:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .photos:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .photos:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px var(--circles);
+    left: -55.8px;
+    background: var(--background);
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .photos:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #e1f572;
+}
+
+.rtl .timeline .photos::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .photos::after {
+    left: 0;
+    right: -55.8px;
+}
+
+/* titulky albumov */
+
+.photos img{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    background: rgba(11, 48, 171, 0.4);
+}
+
+.photos img:hover{
+    width: 300px;
+	height: 200px;
+    transition: .5s;
+    padding: 0px;
+    
+
+}
+
+

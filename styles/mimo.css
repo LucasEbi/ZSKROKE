@@ -1,0 +1,17 @@
+body{
+    background-color: #F6F2D4;   
+    min-width: 200vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}

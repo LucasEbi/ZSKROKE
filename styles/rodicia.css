@@ -1,0 +1,689 @@
+:root{
+    --header-hover-color: #82b4c5;
+    --button-color:#82b4c5;
+    --header-color: #6087e4;
+}
+
+body{
+    background-color: #333333;   
+    min-width: 200vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+section{
+    margin-top: 300px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.banner{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+}
+
+header button{
+    background-color: #6087e4;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    min-height: 56px;
+    min-width: 120px;
+    padding: 16px 40px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+
+header button:hover {
+    background-color: #aec6ff;
+    transform: translateY(-2px);
+}
+
+header a{
+      color: white;
+}
+
+header.sticky button{
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 25%;
+}
+
+
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.sticky{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--header-color);
+    gap: 300px;
+}
+
+header.sticky ul{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+header.sticky img{
+    width: 18%;
+}
+
+header .content a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #82b4c5;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+header .content a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+header .content a:hover{
+    color: #82b4c5;
+}
+
+header.sticky a::before{
+    background-color: #aec6ff;
+}
+
+/* --------------------------------------------------------- */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/media/bg8.webp");
+    background-size: cover;
+}
+
+.banner{
+    padding-top: 220px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.problemy{
+    margin: 10%;
+}
+
+.problemy ul{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.problemy a {
+    position: relative;
+}
+  
+.problemy a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #82b4c5;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.problemy a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.problemy a:hover{
+    color: #82b4c5;
+}
+
+.problemy button{
+    background-color: transparent;
+    color: var(--button-color);
+    border: none;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.problemy button:nth-child(8){
+    margin-right: 200px;
+}
+
+.problemy li:nth-child(1){
+    margin-top: 20px;
+}
+
+.problemy button:hover{
+    animation: animate 0.6s;  
+}
+
+.inner{
+    padding-bottom: 22%;
+    padding-top: 22%;
+}
+
+/* telo stranky-------------------------------------------- */
+
+.prechod{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prechod p{
+    font-size: 16px;
+    max-width: 600px;
+}
+
+.spracovanie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 700px;
+    height: 450px;
+}
+
+.spracovanie:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+.prechod_link a {
+    border: 2px solid #6087e4;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 20px;
+    align-self: flex-end;
+  }
+  
+.prechod_link a:hover, .prechod_link a:active {
+    background-color: #6087e4;
+    color: white;
+}
+
+.prechod p{
+    text-align: center;
+}
+
+.elektronicky{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 700px;
+    height: 450px;
+}
+
+.elektronicky:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+.pisomne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+    width: 700px;
+    height: 450px;
+}
+
+.pisomne:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+.spracovanie_title h1, .elektronicky_title h1, .pisomne_title h1{
+    color: #6087e4;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.prechod_link{
+    justify-self: flex-start;
+}
+
+/* --------------------- */
+.elektronicky_inner a{
+    position: relative;
+}
+  
+.elektronicky_inner a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #6087e4;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.elektronicky_inner a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.elektronicky_inner a:hover{
+    color: #6087e4;
+}
+
+/* ------------------------------------------------------------------- */
+.testovanie{
+    display: flex;
+    background-color: #6087e4;
+    align-items: flex-start;   
+    justify-content:space-around;
+    padding: 200px;
+    flex-wrap: wrap;
+}
+
+.testovanie a {
+    position: relative;
+}
+  
+.testovanie a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.testovanie a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.testovanie a:hover{
+    color: #2D3585;
+}
+
+.testovanie p{
+    font-size: 15px;
+}
+
+.testovanie h1{
+    font-size: 25px;
+    color: #2D3585;
+}
+
+.info_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid #2D3585; 
+    box-shadow: 10px 10px #2D3585;
+    width: 500px;
+    height: 220px;
+}
+
+
+.info_content{
+    padding: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------- */
+.dokumenty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dokumenty ul{
+    position: relative;
+    transform: skewY(-15deg);
+    transition: 0.5s;
+}
+    
+.dokumenty ul li{
+    position: relative;
+    width: 500px;
+    list-style: none;
+    background: #474747;
+    padding: 15px;
+    z-index: var(--i);
+ 
+}
+
+.dokumenty ul li:hover{
+    background: #6087e4;
+    transform: translateX(-50px);
+}
+
+
+.dokumenty ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #393838;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s; 
+}
+
+.dokumenty ul li::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: #393838;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 2s;
+}
+
+.dokumenty ul li:hover::before{
+    background: #6087e4;
+    transition: 2s;
+}
+
+.dokumenty ul li:hover::after{
+    background: #6087e4;
+    transition: 2s;
+}
+
+.dokumenty ul li a{
+    text-decoration: none;
+    color: #6087e4;
+    display: blockl;
+    letter-spacing: 0.05em;
+    transition: 2s;
+}
+
+.dokumenty ul li:hover a{
+    color: white;
+}
+
+.dokumenty ul li:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ------------------------------------------ */
+.potreby{
+    margin-top: 0%;
+    padding: 100px;
+    display: flex;
+    background-color: #759af2;
+    align-items: center;   
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.potreby .obsah p{
+    font-size: 13px;
+    width: 50%;
+    text-align: center;
+}
+
+.nadane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.obsah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bezne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bonus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.potreby h1{
+    font-size: 28px;
+
+}
+
+/* ------------------------------------------------- */
+.end{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap:120px;
+    background-color: #383838;
+    padding: 250px;
+    margin-top: 200px;
+}
+
+.end h1{
+    font-size: 30px;
+    color: #6087e4;
+}
+
+.end .nadpis{
+    margin-bottom: 20px;
+}
+
+.end a {
+    position: relative;
+}
+  
+.end a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #6087e4;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.end a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.end a:hover{
+    color: #759af2;
+}
+
+.end li{
+    list-style: none;
+}
+/* ------------------------------------------------ */
+@media (min-width: 1200px){
+    section{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    header{
+        padding: 50px 50px;
+    }
+    
+    header.sticky{
+        padding: 8px 50px;
+    }
+    
+    .banner{
+        padding-top: 100px;
+    }
+
+    .problemy button{
+        font-size: 45px;
+    }
+
+    .prechod{
+        gap: 200px;   
+    }
+
+    .testovanie{
+        gap: 100px;
+    }
+
+    .potreby{
+        gap: 50px;
+    }
+    
+    .obsah p{
+        max-width: 90000px;
+    }
+
+    .end h1{
+        font-size: 19px;
+    }
+
+    .end{
+        padding: 80px;
+    }
+
+    .end a{
+        font-size: 13px;
+    }
+                
+}
+/* -------------------------------------- */
+@keyframes animate{
+    25%{
+        transform: scale(0.8,1.3);
+    }
+    50%{
+        transform: scale(1.1, 0.8);
+    }
+    75%{
+        transform: scale(0.7,1.2);
+    }
+
+}

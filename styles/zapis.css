@@ -1,0 +1,629 @@
+:root{
+    --text-color: #344152;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+    font-size: 1.3vh;
+    color: var(--text-color);
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #47597E;
+}
+
+.header_app{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 80vh;
+}
+
+nav{
+    display: flex;
+    gap:5vh;
+}
+
+header a{
+    color:white
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a{
+    font-weight: 600;
+    font-size: 100%;
+}
+
+nav a:hover{
+    color:#6087e4 ; 
+}
+
+header img{
+    width: 7vh;
+}
+
+header button{
+    background-color: #6087e4;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    line-height: 24px;
+    margin: 0;
+    padding: 1vh 4vh;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+header button:hover {
+    background-color: #aec6ff;
+    transform: translateY(-2px);
+}
+
+header a{
+      color: white;
+      text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+.background{
+    height: 70vh;
+    background-image: url("../media/prvaci.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+.first{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.first p{
+    max-width: 60vh;
+    font-size: 1.5vh;
+}
+
+.first h1{
+    max-width: 40vh;
+    font-size: 3vh;
+    color: var(--text-color);
+}
+
+span{
+    max-width: 40vh;
+    font-size: 4vh;
+    color: var(--text-color);
+    font-weight: 600;
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+.second{
+    height: 40vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30vh;
+}
+
+.second .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4vh;
+}
+
+.second p{
+    max-width: 60vh;
+    font-size: 1.3vh;
+}
+
+.second h1{
+    font-size: 3vh;
+}
+
+.second span{
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+.picture{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80vh;
+}
+
+.picture img{
+    height: 50vh;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+.third{
+    height: 132vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+
+.third p{
+    max-width: 40vh;
+}
+
+.third .content{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.third h1{
+    font-size: 3vh;
+    max-width: 70vh;
+}
+
+.third h2{
+    font-family: 100;
+    font-size: 1.2vh;
+}
+
+.content span{
+    font-size: 1.5vh;
+    font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+.fourth{
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30vh;
+}
+
+.fourth .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.fourth p{
+    max-width: 30vh;
+}
+
+.fourth a {
+    position: relative;
+    max-width: 30vh;
+}
+  
+.fourth a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--text-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.fourth a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.fourth h1{
+    font-size: 3vh;
+    max-width: 40vh;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+.picture2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 60vh;
+}
+
+.picture2 img{
+    height: 30vh;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+.fifth{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-starte;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+
+.fifth p{
+    max-width: 60vh;
+}
+
+.fifth h1{
+    font-size: 3vh;
+    max-width: 60vh;
+}
+
+.fifth .end span{
+    font-size: 1.7vh;
+    font-weight: 800;
+}
+
+.fifth a {
+    position: relative;
+    max-width: 30vh;
+}
+  
+.fifth a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--text-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.fifth a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap:120px;
+    background-color: #0BB5FF;
+    height: 30vh;
+    padding-right: 10vh;
+}
+
+footer h1{
+    font-size: 3vh;
+    color: var(--text-color);
+    padding-top: 7vh;
+}
+
+footer .nadpis{
+    margin-bottom: 20px;
+}
+
+footer a {
+    position: relative;
+    color: white;
+}
+  
+footer a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--text-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+footer a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+footer li{
+    list-style: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- riesenie responzivity headeru , den 3ti stale si trham vlasy-*/
+@media only screen and (max-width: 1530px) {
+    header img {
+      display: none;
+    }
+
+    .header_app{
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0vh;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    header button{
+        display: none;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- responzivita obrazka pod headerom-*/
+@media only screen and (max-width: 1490px) {
+    .background{
+        height: 50vh;
+        background-size: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .background{
+        height: 50vh;
+        background-size: auto;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- responzivita obrazka pod headerom-*/
+@media only screen and (max-width: 1100px) {
+    .first{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .first{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .first p{
+        max-width: 40vh;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- responzivita obrazka pod headerom-*/
+@media only screen and (max-width: 1550px) {
+    .second{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10em;
+    }
+
+    .second .card{
+        align-items: center;
+    }
+
+    .second p{
+        max-width: 60vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .second{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8em;
+    }
+
+    .second .card{
+        align-items: center;
+    }
+
+    .second p{
+        max-width: 40vh;
+    }
+
+    .second h1{
+        max-width: 40vh;
+    }
+}
+/* ---------------------------------------------------------------------------------------------responzivita obrazku deti */
+@media only screen and (max-width: 500px) {
+    .picture{
+        height: 60vh;
+    }
+    
+    .picture img{
+        height: 40vh;
+    }
+
+    .picture2{
+        height: 50vh;
+    }
+
+    .picture2 img{
+        height: 30vh;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------responzivita pre kruteria pod detmi */
+@media only screen and (max-width: 500px) {
+    .third{
+        height: 140vh;
+        justify-content: center;
+    }
+    
+    .third p{
+        max-width: 40vh;
+    }
+    
+    .third .content{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    
+    .third h1{
+        font-size: 3vh;
+        max-width: 40vh;
+    }
+    
+    .third h2{
+        font-family: 100;
+        font-size: 1.2vh;
+    }
+    
+    .content span{
+        font-size: 1.5vh;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .third{
+        height: 100vh;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------stvrta sekcia textu*/
+@media only screen and (max-width: 900px) {
+    .fourth{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10em;
+    }
+
+    .fourth .card{
+        align-items: center;
+    }
+
+    .fourth p{
+        max-width: 40vh;
+    }
+}
+/* ---------------------------------------------------------------------------------------------------posledna sekcia */
+@media only screen and (max-width: 500px) {
+    .fifth{
+        height: 80vh;
+    }
+
+    .fifth p{
+        max-width: 40vh;
+    }
+    
+    .fifth .content{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    
+    .fifth h1{
+        font-size: 3vh;
+        max-width: 40vh;
+    }
+    
+    .fifth h2{
+        font-family: 100;
+        font-size: 1.2vh;
+    }
+
+    .fifth span{
+        font-size: 3vh;
+    }
+}
+/* ---------------------------------------------------------------------------------------------------footerino*/
+@media only screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden; 
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10vh;
+        height: 130vh;
+    }
+
+    footer h1{
+        font-size: 30px;
+        max-width: 35vh;
+        color: rgb(109, 109, 109);
+    }
+
+    footer a {
+        color: white;
+    }
+    
+    footer a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: rgb(84, 84, 84);
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+    
+    footer a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    footer li{
+        list-style: none;
+    }
+}

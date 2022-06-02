@@ -1,0 +1,560 @@
+body{
+    background-color: #004192;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+    font-size: 2    vh;
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header_app{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80vh;
+}
+
+
+nav{
+    display: flex;
+    gap:5vh;
+}
+
+header a{
+    color:white
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    list-style: none;
+}
+
+nav a{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+nav a:hover{
+    color:#6087e4 ; 
+}
+
+header img{
+    width: 12vh;
+}
+
+header button{
+    background-color: #6087e4;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 4vh;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    min-height: 56px;
+    min-width: 120px;
+    padding: 2vh 3vh;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+header button:hover {
+    background-color: #aec6ff;
+    transform: translateY(-2px);
+}
+
+header a{
+      color: white;
+      text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+.nasa_skola{
+    height: 100vh;
+    background-image: url("../media/sky.png");
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.nasa_skola_inner img{
+    width: 90vh;
+}
+
+.nasa_skola_inner img:hover{
+    animation: fade-out 10s linear;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+.historia{
+    background-color:#004192;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80vh;
+}
+
+.historia img{
+    width: 35vh;
+    margin-left: 10vh;
+}
+
+.historia h1{
+    font-size: 5vh;
+    font-weight: 600;
+    color: #ebf0ff;
+}
+
+.historia button{
+    background-color:#e50000;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    min-height: 56px;
+    min-width: 120px;
+    padding: 16px 40px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.historia button:hover {
+    background-color: #6087e4;;
+    transform: translateY(-2px);
+}
+
+.historia a{
+      color: white;
+      text-decoration: none;
+}
+
+.historia p{
+    max-width: 60vh;
+    font-size: 1.7vh;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.historia .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8vh;
+}
+
+.layer1{
+    background-image: url("../svg/wave.svg");
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.uspechy{
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #000048;
+}
+
+.uspechy img{
+    width: 40vh;
+    margin-right: 10vh;
+}
+
+.uspechy h1{
+    font-size: 5vh;
+    font-weight: 600;
+    color: #ebf0ff;
+}
+
+.uspechy button{
+    background-color:#e50000;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    min-height: 56px;
+    min-width: 120px;
+    padding: 16px 40px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.uspechy button:hover {
+    background-color: #6087e4;;
+    transform: translateY(-2px);
+}
+
+.uspechy a{
+    color: white;
+    text-decoration: none;
+}
+
+.uspechy p{
+    max-width: 60vh;
+    font-size: 1.7vh;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.uspechy .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.uspechy .karticka{
+    display: flex;
+   justify-content: flex-end;
+    align-items: center;
+}
+
+.layer2{
+    background-image: url("../svg/wave2.svg");
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+.ocenenia{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0078c0;
+    gap: 20vh;
+}
+
+.layer3{
+    background-image: url("../svg/blob.svg");
+}
+
+.ocenenia h1{
+    font-size: 7vh;
+    color: rgb(181, 212, 255);
+}
+
+.ocenenia p{
+    max-width: 60vh;
+    font-size: 1.8vh;
+    font-family: 'EB Garamond', serif;
+}
+
+.ocenenia .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.ocenenia button{
+    background-color:#0090d8;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    min-height: 56px;
+    min-width: 120px;
+    max-width: 9vh;
+    padding: 16px 40px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.ocenenia button:hover {
+    background-color: #6087e4;;
+    transform: translateY(-2px);
+}
+
+.ocenenia a{
+      color: white;
+      text-decoration: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.projekty{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15vh;
+    flex-wrap: wrap;
+  
+}
+
+.projekty .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10vh;
+}
+
+.projekty .card{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 35vh;
+    height: 25vh;
+    border-radius: 5px;
+    box-shadow: inset 0em -7em #0076c076, inset 0 -7.5em #0076c032;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.projekty #card1{
+    background-image: url("../media/sosna.png");
+}
+
+.projekty #card2{
+    background-image: url("../media/micro.png");
+}
+
+.projekty #card3{
+    background-image: url("../media/it.png");
+}
+
+.projekty #card4{
+    background-image: url("../media/op.png");
+}
+
+.projekty #card5{
+    background-image: url("../media/opera.png");
+}
+
+.projekty .card:hover{
+    animation: ponor 10s linear forwards;
+}
+
+.projekty h1{
+    font-size: 5vh;
+    color: white;
+    padding-left: 1vh;
+    font-weight: 800;
+    text-transform: uppercase;
+    }
+
+.projekty .cards h1{
+    font-size: 3vh;
+    color: white;
+    padding-left: 1vh;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.projekty h1::after{
+
+    content: " ";
+    display: block;
+    bottom: 0px;
+    left: 10%;
+    width: 15%;
+    height: 4px;
+    background-color: rgb(0, 187, 255);
+}
+
+.projekty p{
+    color: rgba(255, 255, 255, 0.698);
+    padding-left: 1vh;
+    padding-bottom: 1.5vh;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap:120px;
+    background-color: #0078c0;
+    height: 30vh;
+    padding-right: 10vh;
+}
+
+footer h1{
+    font-size: 2.5vh;
+    color: black;
+    padding-top: 8vh;
+}
+
+footer a {
+    position: relative;
+    font-size: 1.3vh;
+}
+  
+footer a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #0090d8;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+footer a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+footer li{
+    list-style: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+@keyframes fade-out {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100%{ opacity: 0; }
+  }
+
+@keyframes ponor {
+    0% { box-shadow: inset 0em -7em #0076c076, inset 0 -7.5em #0076c032;}
+    50%{box-shadow: inset 0em -15em #0076c076, inset 0 -15.5em #0076c032;}
+    100%{box-shadow: inset 0em -20em #0076c076, inset 0 -20.5em #0076c032;}
+  }
+
+
+  /* ------------------------------------------------------------------------------------------------------------------------------- riesenie responzivity headeru-*/
+@media only screen and (max-width: 1530px) {
+    header img {
+      display: none;
+    }
+
+    .header_app{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0vh;
+    }
+
+    header button{
+        padding: 4px 10px;
+    }
+}
+/* ---------------------------------------------------------------------------mobil */
+@media only screen and (max-width: 590px) {
+    header button{
+        display: none; 
+    }
+    .historia{
+        height: 10vh;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- pod headerkou-*/
+@media only screen and (max-width: 750px) {
+    .nasa_skola img{
+        display: none;
+    }
+    .nasa_skola{
+        background-position: center;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- medzera-*/
+@media only screen and (max-width: 950px) {
+    .historia{
+        height: 40vh;
+    }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------od tade budu obrazky */
+@media only screen and (max-width: 985px) {
+    .historia img{
+        display: none;
+    }
+    .uspechy img{
+        display: none;
+    }
+    .spacer{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .historia .content{
+        align-items: center;
+        gap: 4vh;
+    }
+    .historia p{
+        max-width: 80vh;
+    }
+    .uspechy .content{
+        align-items: center;
+        gap: 4vh;
+    }
+    .uspechy p{
+        max-width: 80vh;
+    }
+}

@@ -1,0 +1,110 @@
+body{
+  background-color: #004192;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Poppins' , sans-serif;
+  font-weight: 500;
+  font-size: 1.5vh;
+  color: white;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header_app{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 80vh;
+}
+
+
+nav{
+  display: flex;
+  gap:5vh;
+}
+
+header a{
+  color:white
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  list-style: none;
+}
+
+nav a{
+  font-weight: 600;
+  font-size: 17px;
+}
+
+nav a:hover{
+  color:#6087e4 ; 
+}
+
+header img{
+  width: 12vh;
+}
+
+header button{
+  background-color: #6087e4;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 40px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+header button:hover {
+  background-color: #aec6ff;
+  transform: translateY(-2px);
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+.oznamy{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-auto-rows: 100px 300px;
+  grid-gap:10px;
+}
+.oznamy h1{
+  color: red
+}
+
+.oznamy p{
+  max-width: 80vh;
+}
