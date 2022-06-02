@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSKROKE</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/ziaci.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="uvod active">
+        <!-- nazov skoly mozne pridat aj logo -->
+        <header>
+            <h2 class="logo">ZS Krosnianska4</h2>
+            <div class="toggle active"></div>
+        </header>
+
+        <main>
+
+        <!-- video -->
+        <video class="overlay" autoplay loop muted>
+            <source src="media/bahamy.mp4" type="video/mp4">
+        </video>
+
+        <!-- text prekryvajuci video -->
+        <div class="text">
+            <div class="nadpis">
+                <div class="nadpis_dnu">
+                    <button class="Najlepsia">N</button>
+                    <button class="Najlepsia">a</button>
+                    <button class="Najlepsia">j</button>
+                    <button class="Najlepsia">l</button>
+                    <button class="Najlepsia">e</button>
+                    <button class="Najlepsia">p</button>
+                    <button class="Najlepsia">š</button>
+                    <button class="Najlepsia">i</button>
+                    <button class="Najlepsia">a</button>
+                    
+                    <div class="zakladna">
+                        <button class="Zakladna">Z</button>
+                        <button class="Zakladna">á</button>
+                        <button class="Zakladna">k</button>
+                        <button class="Zakladna">l</button>
+                        <button class="Zakladna">a</button>
+                        <button class="Zakladna">d</button>
+                        <button class="Zakladna">n</button>
+                        <button class="Zakladna">á</button>
+                    </div>
+
+                    <div class="skola"> 
+                        <button class="Skola">Š</button>
+                        <button class="Skola">k</button>
+                        <button class="Skola">o</button>
+                        <button class="Skola">l</button>
+                        <button class="Skola">a</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="nadpis">
+                <div class="nadpis_dnu">
+                    <button class="na">n</button>
+                    <button class="na">a</button>
+
+                    <div>
+                        <button class="Slovensku">S</button>
+                        <button class="Slovensku">l</button>
+                        <button class="Slovensku">o</button>
+                        <button class="Slovensku">v</button>
+                        <button class="Slovensku">e</button>
+                        <button class="Slovensku">n</button>
+                        <button class="Slovensku">s</button>
+                        <button class="Slovensku">k</button>
+                        <button class="Slovensku">u</button>
+                    </div>
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium alias tempora pariatur veritatis consequatur ipsa architecto perferendis iste quia in enim officia natus, dolorum excepturi ad? Suscipit vero veniam quasi!</p>
+            
+            <a href="ziaci.html">Pre Žiakov</a>
+            <a id="tlacitko_preuchadzacov" href="uchazdaci.html">uchádzačov</a>
+        </div>
+    </section>
+
+        <!-- menucko -->
+    <div class="menu">
+        <ul>
+            <li><a href="oznamy.html">Oznamy</a></li>
+            <li><a href="albumy.html">Albumy</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li><a href="https://www.google.sk/maps/place/Z%C3%A1kladn%C3%A1+%C5%A1kola+Krosnianska+4/@48.7397771,21.2838186,17z/data=!3m1!4b1!4m5!3m4!1s0x473ee09c2e6ff14d:0x5d7f13d5cac13942!8m2!3d48.7395587!4d21.2859136">Mapy</a></li>
+        </ul>
+    </div>   
+    </main>
+
+    <!-- script pre otvorenie mencuka -->
+   <script>
+        const menuToggle = document.querySelector('.toggle')
+        const uvod = document.querySelector('.uvod')
+
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active')
+            uvod.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
