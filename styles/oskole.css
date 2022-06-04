@@ -9,7 +9,7 @@ body{
     border: 0;
     font-family: 'Poppins' , sans-serif;
     font-weight: 500;
-    font-size: 2    vh;
+    font-size: 2vh;
     color: white;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -50,7 +50,7 @@ header a{
 
 nav a{
     font-weight: 600;
-    font-size: 17px;
+    font-size: 2.5vh;
 }
 
 nav a:hover{
@@ -64,7 +64,6 @@ header img{
 header button{
     background-color: #6087e4;
     border-radius: 4px;
-    border: 0;
     box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
     box-sizing: border-box;
     color: #fff;
@@ -73,9 +72,8 @@ header button{
     font-weight: 700;
     line-height: 24px;
     margin: 0;
-    min-height: 56px;
-    min-width: 120px;
-    padding: 2vh 3vh;
+    min-height: 7vh;
+    min-width: 20%;
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
@@ -146,9 +144,8 @@ header a{
     font-weight: 700;
     line-height: 24px;
     margin: 0;
-    min-height: 56px;
-    min-width: 120px;
-    padding: 16px 40px;
+    min-height: 7vh;
+    min-width: 22%;
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
@@ -227,9 +224,8 @@ header a{
     font-weight: 700;
     line-height: 24px;
     margin: 0;
-    min-height: 56px;
-    min-width: 120px;
-    padding: 16px 40px;
+    min-height: 7vh;
+    min-width: 22%;
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
@@ -310,14 +306,11 @@ header a{
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     margin: 0;
-    min-height: 56px;
-    min-width: 120px;
-    max-width: 9vh;
-    padding: 16px 40px;
+    min-height: 7vh;
+    min-width: 22%;
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
@@ -338,7 +331,7 @@ header a{
 /* ----------------------------------------------------------------------------------------------------------- */
 
 .projekty{
-    height: 100vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -432,21 +425,23 @@ footer{
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    gap:120px;
     background-color: #0078c0;
     height: 30vh;
     padding-right: 10vh;
+    gap: 7%;
 }
 
 footer h1{
-    font-size: 2.5vh;
+    font-size: 3vh;
     color: black;
     padding-top: 8vh;
 }
 
 footer a {
     position: relative;
-    font-size: 1.3vh;
+    font-size: 1.8vh;
+    font-weight: 200;
+    font-family: 'Poppins' , sans-serif;    
 }
   
 footer a::before {
@@ -470,6 +465,12 @@ footer a:hover::before {
 
 footer li{
     list-style: none;
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
